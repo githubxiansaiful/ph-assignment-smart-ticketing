@@ -234,4 +234,13 @@ div#coupon-input-box.disabledCouponBox {
     .ticket-header {
         display: block !important;
     }
+    .logo-bus-name-available-seat {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        border-right: 0 !important;
+    }
+    .logo-bus-name-available-seat:before,
+    .logo-bus-name-available-seat:after {
+        display: none !important;
+    }
 }
