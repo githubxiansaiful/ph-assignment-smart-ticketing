@@ -63,3 +63,37 @@ body .container {
     background: #fff;
     border-radius: 50%;
 }
+.ticket-header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    position: relative;
+}
+.logo-bus-name-available-seat {
+    position: relative;
+    border-right: 2px dashed #1DD100 !important;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+.logo-bus-name-available-seat:before {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    bottom: -30px;
+    right: -30px;
+    background: #F7F8F8;
+    border-radius: 50%;
+}
+.logo-bus-name-available-seat:after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    top: -30px;
+    right: -30px;
+    background: #F7F8F8;
+    border-radius: 50%;
+}
