@@ -244,3 +244,11 @@ div#coupon-input-box.disabledCouponBox {
         display: none !important;
     }
 }
+#popup {
+    display: none;
+}
+.popup-activated {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+}
