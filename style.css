@@ -97,3 +97,49 @@ body .container {
     background: #F7F8F8;
     border-radius: 50%;
 }
+.select-your-seat-total {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+.steering {
+    background: #E6E7E8;
+    width: 110px;
+    height: 56px;
+    border-radius: 12px;
+    text-align: center;
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seat-main-div {
+    margin-top: 10px;
+}
+.seat-main-div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.seat-main-div ul li {
+    position: relative;
+}
+.seat-main-div ul li .serial-n {
+    position: absolute;
+    top: 15px;
+    left: -30px;
+}
+.seat-main-div ul li button {
+    background: #F7F8F8;
+    height: 56px;
+    border-radius: 12px;
+    width: 100%;
+}
+.seat-inner-lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 35px;
+    padding-left: 30px;
+}
