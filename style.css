@@ -10,7 +10,7 @@ body .container {
     font-size: 20px;
     color: #000;
     background: #1DD100;
-    padding: 18px 25px;
+    padding: 15px 30px;
     border-radius: 12px;
     display: inline-block;
     font-weight: bold;
@@ -32,4 +32,34 @@ body .container {
     z-index: 1;
     position: absolute;
     border-radius: 36px;
+}
+.coupon-box {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    position: relative;
+}
+.coupon-box div:first-child {
+    position: relative;
+    border-right: 2px dashed #fff !important;
+}
+.coupon-box div:first-child:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    bottom: -20px;
+    right: -20px;
+    background: #fff;
+    border-radius: 50%;
+}
+.coupon-box div:first-child:after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: -20px;
+    right: -20px;
+    background: #fff;
+    border-radius: 50%;
 }
