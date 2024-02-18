@@ -143,3 +143,58 @@ body .container {
     gap: 35px;
     padding-left: 30px;
 }
+.selected-seat-table table thead tr {
+    border-bottom: 1px dashed #C7C7CA;
+}
+.selected-seat-table thead td {
+    font-size: 16px;
+    color: #030712;
+}
+.selected-seat-table table td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.selected-seat-table table tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.selected-seat-table tbody td:last-child,
+.selected-seat-table thead td:last-child {
+    text-align: right;
+}
+.selected-seat-table tbody td {
+    font-size: 16px !important;
+}
+.selected-seat-table {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.coupon-code {
+    position: relative;
+}
+.coupon-code input {
+    width: 100% !important;
+    height: 70px;
+    padding-left: 20px;
+    border-radius: 12px;
+    position: relative;
+    outline: none;
+}
+.coupon-code button {
+    background-color: #1DD100;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#addedSeat {
+    background: #1DD100;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0px 10px;
+}
