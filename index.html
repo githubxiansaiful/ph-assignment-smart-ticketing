@@ -30,7 +30,7 @@
                       <li><a>Item 3</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-4xl font-extrabold">Balaka</a>
+                  <a class="btn btn-ghost text-3xl font-extrabold">Nagar Paribahan</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-[18px]">
@@ -52,7 +52,7 @@
     <section class="mt-5">
         <div class="container rounded-[36px] pt-20 pb-20 hero-section-container">
             <div class="text-center max-w-[690px] m-auto relative z-40">
-                <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with <span class="text-brand-green block">Balka Paribahan</span></h1>
+                <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with <span class="text-brand-green block">Nagar Paribahan</span></h1>
                 <p class="text-[18px] mt-8 mb-8 text-white">Experience seamless travel from booking to arrival with Balka. From ticketing to accommodations, we've got your journey covered.</p>
                 <a href="/#balakaTicket" class="btn bg-[#1DD100] shadow-none border-[#1DD100] text-white font-semibold text-xl h-[60px] w-[180px]">Buy Tickets</a>
             </div>
@@ -98,7 +98,7 @@
       <!-- Buy a Ticket - Top Area -->
       <div class="container pb-10">
         <div class="mb-10 text-center">
-          <h2 class="font-extrabold text-[#030712] text-4xl mb-6">Balaka Paribahan - Buy a Ticket</h2>
+          <h2 class="font-extrabold text-[#030712] text-4xl mb-6">Nagar Paribahan - Buy a Ticket</h2>
           <p class="text-[#65676E] max-w-[680px] m-auto text-[18px]">Explore our wide range of ticket options tailored to your travel needs. From single rides to multi-leg adventures, find the perfect tickets for your next journey with ease.</p>
         </div>
         <div class="rounded-3xl bg-white ticket-header">
@@ -109,14 +109,14 @@
                   <img src="img/bus-logo.png">
                 </div>
                 <div>
-                  <h3 class="font-bold text-[#030712] text-3xl">Greenline Paribahan</h3>
+                  <h3 class="font-bold text-[#030712] text-3xl">Nagar Paribahan</h3>
                   <p class="text-[18px]">Coach-009-WEB ! AC_Business</p>
                 </div>
               </div>
               <div>
-                <div class="bg-[#DDF8D9] text-[#1DD100] flex text-center text-[18px] font-semibold px-5 py-4 rounded-2xl">
+                <div class="bg-[#DDF8D9] text-[#1DD100] flex text-center items-center text-[18px] font-semibold px-5 py-4 rounded-2xl">
                   <img src="img/seat.png" class="mr-2">
-                  <span>40 Seats left</span>
+                  <span><span id="seatLeftCount">40</span> Seats left</span>
                 </div>
               </div>
             </div>
@@ -232,26 +232,38 @@
                       <td>Price</td>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="addedTicketdetails">
                     <tr>
-                      <td>C5</td>
-                      <td>Economoy</td>
-                      <td>550</td>
+                      
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="font-bold flex justify-between mb-5">
                 <h3>Total Price</h3>
-                <h3>BDT <span>100</span></h3>
+                <h3>BDT <span id="totalAmount">00.00</span></h3>
+              </div>
+              <div id="discounted-total" class="font-bold flex justify-between mb-5">
+                <h3>Discount Price</h3>
+                <h3>BDT <span id="totaldiscount-amount">00.00</span></h3>
               </div>
               <div>
-                <div class="coupon-code">
-                  <form>
-                    <input type="text" required placeholder="Have any copupon?">
-                    <button>Apply</button>
-                  </form>
+                <div id="coupon-warning-message" role="alert" class="alert alert-warning mb-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                  <span>Warning: Invalid email address!</span>
                 </div>
+                <div id="copuponSuccessMessage" role="alert" class="alert alert-success text-white mb-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <span>Your Coupon Applied Successfully.</span>
+                </div>
+                <div id="coupon-input-box" class="coupon-code">
+                  <input type="text" id="couponInput" required placeholder="Have any copupon?">
+                  <button id="applyCoupon">Apply</button>
+                </div>
+              </div>
+              <div class="font-bold flex justify-between mt-5">
+                <h3>Grand Total</h3>
+                <h3>BDT <span id="grandtotalAmount">00.00</span></h3>
               </div>
             </div>
             <div>

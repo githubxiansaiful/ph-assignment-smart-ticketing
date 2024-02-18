@@ -198,3 +198,40 @@ body .container {
     border-radius: 20px;
     padding: 0px 10px;
 }
+.selectedSeatBtn {
+    background: #1DD100 !important;
+    color: #fff;
+}
+#copuponSuccessMessage {
+    display: none;
+}
+button#applyCoupon.disabled {
+    cursor: not-allowed;
+    background: #ddd;
+    pointer-events: none !important;
+}
+div#copuponSuccessMessage.success-show-message {
+    display: flex !important;
+}
+div#coupon-input-box.disabledCouponBox {
+    display: none !important;
+}
+#coupon-warning-message {
+    display: none;
+}
+#coupon-warning-message.coupon-warning-message-active {
+    display: flex;
+}
+#applyCoupon[disabled=disabled] {
+    cursor: not-allowed;
+    background: #ddd;
+}
+@media all and (max-width: 981px) {
+    .select-your-seat-total {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .ticket-header {
+        display: block !important;
+    }
+}
